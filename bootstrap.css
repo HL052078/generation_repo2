@@ -1,0 +1,42 @@
+.orange {
+    background-color: orangered;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: deepskyblue;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: mediumpurple;
+}
+
+.pink {
+    background-color: deeppink;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.outsideborder {
+    border-style: solid;
+    border-width: .5em;
+    border-color: transparent;
+    background-clip: padding-box;
+}
+
+.wordwrap {
+    word-wrap: break-word;
+}

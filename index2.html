@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is Study Page</title>
+    </head>
+<body>
+<header>
+<p>This is HTML code by Hanah Lewis and Study Group
+<br>
+<a href="index.html" alt="link to second page">Second Page</a></p>
+</header>
+
+
+<main>
+"<a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
+    <img src="Images/htmlcode.png" alt="HTML Image" /></a>
+
+    <!--Ordered list attribute-->
+<section>
+    <h2>This is a ordered List:</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!--UnOrdered list attribute-->
+    <h2>This is unorder list</h2>
+    <ul>
+        <li>Item 4</li><li>Item 5</li><li>Item 6</li>
+    </ul>
+</section>
+
+<!--UNOrdered list with wrapper attribute-->
+<section>
+    <h2>This is a wrapped Unorder List</h2>
+    <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#linksamepg">2nd paragraph</a></li>
+    </ul>
+</section>
+
+<!--link to certain parts of the page attribute-->
+<section id="intro">This is a paragraph introduction with a ID intro 
+    tag to use with UL wrapper
+
+
+
+<article>
+<p><a href="https://en.wikipedia.org/wiki/HTML_element">HTML elements</a> are the building blocks of HTML pages. 
+    With HTML constructs, images and other objects such as interactive 
+    forms may be embedded into the rendered page. HTML provides a means to create structured 
+    documents by denoting structural semantics for text such as headings, paragraphs, lists, links, 
+    quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as "img" and "input"
+    directly introduce content into the page. Other tags such as "p" surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+</article>
+</section>
+
+<section>
+    <h2>This is a table</h2>
+    <table border="1">
+        <tr>
+          <th scope="col">Software Name</th>
+           <th scope="col">Number of Days I worked on it</th>
+           <th scope="col">Rated Least to Greatest</th>
+        </tr>
+        <thead>
+            <tbody>
+        <tr>
+           <td>HTML</td>
+           <td>20</td>
+           <td>Greatest</td>
+         </tr>
+        </thead> 
+         <td>Java</td>
+           <td>10</td>
+           <td>Middle</td>
+         </tr>
+         <tr>
+            <td colspan="2">Took a break</td>
+            <td>Resumed Studies</td>
+          </tr>
+         <td>C#</td>
+           <td>15</td>
+           <td>Middle</td>
+         </tr>
+         
+         <td>SQL</td>
+           <td>1</td>
+           <td>Least</td>
+         </tr>
+         <tr>
+             <th scope="row">Sunday</th>
+             <td rowspan="2">0</td>
+             <td rowspan="2">Enjoyed</td>
+         </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>Who Cares?</td>
+        </tfoot>
+      </table>
+    </section>      
+<br />
+<img src="images2/chair5.jpg" />
+<section>
+    <form action="/practice.php" method="POST">
+      <h1>HTML Form Information</h1>
+      <p>Do you know all the tags up until now? Let's see what you know. </p>
+      <label for="first-name">First Name:</label>
+      <input type="text" name="first-name" id="first-name">
+      <label for="first-name">Last Name:</label>
+      <input type="text" name="last-name" id="first-name">
+      <br /><br />
+        <label for="user-pw">Password:</label>
+        <!--text box-->
+        <input type="text" name="user-pw" id="user-pw">
+        <br /><br />
+        <label for="tag">Whats your favorite tag:</label>
+        <!--text box-->
+        <input type="text" name="tag" id="tag">
+        <br /><br />
+        <label for="numtag">How many tags do you know?</label>
+        <!--text box incremeent number-->
+        <input id="numtag" name="numtag" type="number" step="1">
+        <br />
+        <hr>
+        <br />
+        <section class="learning">
+            <label for="experlvl">How much experience do you have in coding?</label>
+            <br>
+            <span>None</span>
+                 <!--range choice box-->
+            <input id="experlvl" name="experlvl" type="range" min="0" max="5" step="0.5">
+            
+            <span>Expert</span>
+
+        <br />
+        <br />
+        <section class="htmlchoice">
+            <span>Which tag should we learn first?</span>
+            <br>
+            <!--first checkbox-->
+            <input id="atag" name="tagschoice" type="checkbox" value="theatag">
+                      <label for="atag">The a tag</label>
+            <!--second checkbox-->
+             <input id="imagetag" name="tagschoice" type="checkbox" value="theimagetag">
+            <label for="imagetag">Image Tag</label>
+            <!--third checkbox-->
+  <input id="divtag" name="tagschoice" type="checkbox" value="thedivtag">
+            <label for="divtag">Tomato</label>
+        </section>
+  <br />
+  <br />
+  <!--Radio buttons-->
+  <section>
+  <span>Do you like class so far?</span>
+  <br />
+   <!--yes radio button below-->
+   <input type="radio" id="yes" name="cheese" value="yes">
+   <label for="yes">Yes</label>
+     <!--no radio button below-->
+<input type="radio" id="no" name="cheese" value="no">
+   <label for="no">No</label>
+</section> 
+<br /><br />
+<!--Drop Down list-->
+<section class="job-type">
+    <label for="job">How long do you think it'll take you to find a job?</label>
+<!--choices for drop down list below-->
+<select id="job" name="job">
+<option value="sixmon">Six Months</option>
+<option value="ninemon">Nine Months</option>
+<option value="twelvemon">Twelve Months</option>
+</select>
+</section>
+
+<br /><br />
+
+<!--Submit button-->  
+ <input type="submit" value="Send">
+
+    </form>
+  </section>
+
+  <br />
+<section>
+  <div id="linksamepg">In order to link to a target on the same page, we must give the target an id, like this:
+
+        <ul>
+            <li>paragraph tag enclosed with id="id name" First spot the page will jump to</li>
+        <li>paragraph tag enclosed with second id="id 2nd name ist the next location the page will jump to.</li>
+    </div>
+</section>
+      
+</main>
+<footer>
+<p>Created by Hanah Lewis</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.head1 {
+font-size: 20px;
+}
+
+.head2 {
+    font-size: 1.25em;
+    }
+
+    .head3 {
+        font-size: 125%;
+        }
+
+  .display {
+      color: #141293;
+     =
+  }     
+
+  .img1 {
+width: 10em;
+height:10em;
+float: right;
+  }
+
+  .img2 {
+    width: 10em;
+    height:10em;
+    
+    
+      }
+
+
+      .flexboxcontainer {
+        display: flex;
+        background-color: darkgray;
+        border: .2em solid black;
+        /*Justify conent and align items, align with the main and cross axis*/
+        /*align across the main axis*/
+       justify-content: flex-start;
+        align-items: flex-start;
+        /*align acorss the cross axis, this will show the min-height we set*/
+        /*align-items: center;*/
+        /*to wrap use flex-wrap to wrap the boxes to next row or column when browser is re-sized*/
+        /*flex-wrap: wrap;*/
+        /*everything goes all over the place with wrap*/
+        flex-wrap: nowrap;
+        /*flex-direction of column changes main axis to vertical, and cross axis to horizontal*/
+       /* flex-direction: column;*/
+        /*it all centers in the box and makes on column*/
+        /*justify-content: center;*/
+        /*using flex-start with justify puts them centered in the flex box, but all boxes towards the top for columns
+            If we move this to flex-end all the boxes will move to the bottom.
+        */
+        /*justify-content: space-evenly;*/
+        /*aligns them in the center*/
+       /* align-items: center;*/
+    /*with columns this pushes the boxes to the left, flex-end will move them to right*/
+        /*align-items: flex-end;*/
+        /*height: 50em;*/
+    }
+
+    .item1 {
+        min-height: 5em;
+    /*to shrink individual boxes use flex-shrink*/
+        flex-shrink: 0;
+        order: 2;
+    }
+    
+    .sm {
+
+        width: ;
+        height ;
+    }
